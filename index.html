@@ -162,10 +162,7 @@
             cursor: pointer;
         }
         .photos-grid img:hover { transform: scale(1.02); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
-        .photos-grid img:first-child {
-            grid-column: span 2;
-            height: 320px;
-        }
+        .photos-grid img:last-child:nth-child(odd) { grid-column: span 2; }
 
         /* ── Amenities ── */
         .amenities { padding: 56px 0; background: white; }
@@ -286,7 +283,7 @@
 
 <section class="photos">
     <div class="container">
-        <h2 class="section-title fade-up">Фотографии</h2>
+        <h2 class="section-title fade-up">Наши виды</h2>
         <div class="photos-grid">
             <img src="photos/photo1.jpg" alt="Фото">
             <img src="photos/photo2.jpg" alt="Фото">
